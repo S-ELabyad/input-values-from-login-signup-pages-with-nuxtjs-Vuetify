@@ -1,0 +1,85 @@
+<template>
+   <div>
+   <v-app id="inspire">
+    <v-main>
+        <v-container fluid fill-height>
+            <v-layout align-center justify-center>
+                <v-flex xs12 sm8 md4>
+                    <v-card class="elevation-12">
+
+
+        <v-card-title>
+          <span class="text-h5">Create modifier</span>
+        </v-card-title>
+        <v-card-text>
+          <v-container>
+            <v-row>
+              <v-col cols="12">
+                <v-text-field v-model="last" label="Create Categorie" outlined rounded></v-text-field>
+              </v-col>
+              <v-col cols="12">
+                <v-select :items="items" label="Outlined style" outlined rounded></v-select>
+              </v-col>
+              <v-col cols="12">
+                <v-select :items="items" label="Outlined style" outlined rounded></v-select>
+              </v-col>
+              <v-col cols="12">
+                <v-select :items="items" label="Outlined style" outlined rounded></v-select>
+              </v-col>
+                 <v-col cols="12">
+                <v-select :items="items" label="Outlined style" outlined rounded></v-select>
+              </v-col>
+              <v-col cols="12">
+                <v-select :items="items" label="Outlined style" outlined rounded></v-select>
+              </v-col>
+              <v-col cols="12">
+                <v-select :items="items" label="Outlined style" outlined rounded></v-select>
+              </v-col>
+              <v-col cols="12" sm="6">
+                   <v-switch
+        v-model="showMessages"
+        label="Show messages"
+      ></v-switch>
+              </v-col>
+                  <v-col cols="12" sm="6">
+                   <v-switch
+        v-model="showMessages"
+        label="Show messages"
+      ></v-switch>
+              </v-col>
+           
+
+              <v-col cols="12" >
+                <v-text-field v-model="last" label="Create Categorie" outlined rounded></v-text-field>
+              </v-col>
+              <v-col cols="12" >
+                <v-text-field v-model="last" label="Create Categorie" outlined rounded></v-text-field>
+              </v-col>
+              <v-col cols="12" sm="6">
+               <v-btn color="red">
+              <v-icon class="mx-1" color="white">mdi-plus-circle</v-icon>Add Image
+            </v-btn>
+              </v-col>
+
+            </v-row>
+          </v-container>
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+      <v-btn color="red" text @click="dialog2 = false">Close</v-btn>
+            <v-btn color="red" rounded @click="dialog2 = false">Submit</v-btn>
+        </v-card-actions>
+  
+                    </v-card>
+                </v-flex>
+            </v-layout>
+        </v-container>
+    </v-main>
+   </v-app>
+
+</div>
+
+</template>
+
+<script>
+</script>
